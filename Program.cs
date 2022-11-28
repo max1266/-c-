@@ -1,17 +1,17 @@
 ﻿Console.Clear();
 Console.WriteLine("Введите первое число");
-double numberA = Convert.ToDouble(Console.ReadLine());
+double a = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите второе число");
-double numberB = Convert.ToDouble(Console.ReadLine());
-if (numberA > numberB){
-    Console.Write("Максимальное число = ");
-    Console.Write(numberA);
-    Console.Write("Минимальное число = ");
-    Console.Write(numberB);
-}
-else {
-Console.Write("Максимальное число = ");
-Console.Write(numberB);
-Console.Write("Минимальное число = ");
-Console.Write(numberA);
-}
+double b = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите третье число");
+double c = Convert.ToDouble(Console.ReadLine());
+double max = a ;
+if (a > max)
+    max = a;
+if (b > max)
+    max = b;
+    else
+        max = a;
+if (c > max)
+    max = c;
+Console.WriteLine(max);
